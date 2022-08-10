@@ -1,4 +1,4 @@
 # CartiClicker
 Cookie clicker for kINg vAMP**🧛
 
-[Play](edwardx29.github.io/carticlicker/)
+[Play](https://edwardx29.github.io/carticlicker/)
