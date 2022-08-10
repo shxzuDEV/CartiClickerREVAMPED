@@ -1,0 +1,65 @@
+
+.Game {
+    display:flex;
+    flex-direction: row;
+}
+
+.leftPanel {
+    width:50vw;
+    text-align:center;
+}
+
+.rightPanel {
+    width:50vw;
+}
+
+img {
+    user-select:none;
+}
+
+.purchaseOption {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    border:black solid 2px;
+    height:25vh;
+    border-radius:25px;
+    box-sizing:border-box;
+}
+
+.purchaseOption:hover {
+    background-color: #991616;
+}
+
+.purchaseOption:active {
+    background-color:#666666;
+}
+
+.purchaseOption img {
+    width:25vh;
+    height:25vh;
+    border-radius:25px;
+}
+
+.optionDescription {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items:center;
+    width:calc(45vw - 25vh);
+}
+
+.descrLeft {
+    display:flex;
+    flex-direction:column;
+}
+
+.descrLeft span {
+    font-size:3vh;
+    margin-bottom:3vh;
+    margin-left:5vh;
+}
+
+.quantity {
+    font-size:12.5vh;
+}
