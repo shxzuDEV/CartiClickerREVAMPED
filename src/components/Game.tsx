@@ -6,6 +6,7 @@ import Uzi from '../assets/uzi.jpg'
 import Song from '../assets/song.png'
 import Tank from '../assets/tank.jpg'
 import FilthyImg from '../assets/wake.jpg'
+import Rizzy from '../assets/carti-full.jpg'
 
 
 export default function Game () {
@@ -18,6 +19,8 @@ export default function Game () {
     const [Filthy, setFilthy] = useState(0);
     const [FilthyCost, setFilthyCost] = useState(40);
 
+    const
+    
     const [UziCollabs, setUziCollabs] = useState(0);
     const [UziCost, setUziCost] = useState(100);
 
