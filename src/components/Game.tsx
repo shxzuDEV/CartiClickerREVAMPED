@@ -6,7 +6,7 @@ import Uzi from '../assets/uzi.jpg'
 import Song from '../assets/song.png'
 import Tank from '../assets/tank.jpg'
 import FilthyImg from '../assets/wake.jpg'
-import Rizzy from '../assets/carti-full.jpg'
+import RizzyImg from '../assets/carti-full.jpg'
 
 
 export default function Game () {
@@ -85,10 +85,10 @@ export default function Game () {
     const BuyRizzy = () => {
         
      if (cartiCoins >= RizzyCost) {
-            setCartiCoins(coins => coins - tanksCost); 
+            setCartiCoins(coins => coins - RizzyCost); 
             setRizzy(tanks => tanks+1);
             setRizzyCost(cost => Math.ceil(cost*1.2));
-            setCPS(CPS => CPS+66);
+            setCPS(CPS => CPS+420);
         
     }
     
@@ -104,6 +104,7 @@ export default function Game () {
             </div>
             <div className="rightPanel">
                 {purchaseOption(BuySong, songsCost, songs, "Make a song", Song)}
+                {purchaseOption(BuyRizzy, RizzyCost, Rizzy, "Get  rizzy", "RizzyImg)}
                 {purchaseOption(BuyFilthy, FilthyCost, Filthy, "WAKE UP FILTHY**", FilthyImg)}
                 {purchaseOption(BuyUzi, UziCost, UziCollabs, "Collab w/ Uzi**SLATT", Uzi)}
                 {purchaseOption(BuyTank, tanksCost, tanks, "**RIDE IN A NEW TANK", Tank)}
