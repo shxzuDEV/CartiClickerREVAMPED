@@ -19,7 +19,8 @@ export default function Game () {
     const [Filthy, setFilthy] = useState(0);
     const [FilthyCost, setFilthyCost] = useState(40);
 
-    const
+    const [Rizzy, setRizzy] = usestate(0);
+    const [RizzyCost, setRizzyCost] = useState(1);
     
     const [UziCollabs, setUziCollabs] = useState(0);
     const [UziCost, setUziCost] = useState(100);
@@ -80,7 +81,15 @@ export default function Game () {
             setTanksCost(cost => Math.ceil(cost*1.2));
             setCPS(CPS => CPS+66);
         }
-
+        
+    const BuyRizzy = () => {
+        
+     if (cartiCoins >= RizzyCost) {
+            setCartiCoins(coins => coins - tanksCost); 
+            setRizzy(tanks => tanks+1);
+            setRizzyCost(cost => Math.ceil(cost*1.2));
+            setCPS(CPS => CPS+66);
+        
     }
     
 
